@@ -1,9 +1,10 @@
 
-public class Bike implements Stop {
-
+public class Bike extends Vehicle {
+	
 	@Override
-	public void stop() {
-		System.out.println("The bike has been stopped");
-	}
+	public void sounds(){
+
+		System.out.println("The Bike sounds like *vroom vroom");
+}
 
 }

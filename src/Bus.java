@@ -1,16 +1,10 @@
 
-public class Bus implements Drive, Stop{
+public class Bus extends Vehicle{
 
-	@Override
-	public void stop() {
-		System.out.println("The bus has been stopped");
-		
-	}
+	
+	public void go(){
 
-	@Override
-	public void drive() {
-		System.out.println("The bus has been driving");
-		
-	}
+		System.out.println("*The Bus begins moving*");
+}
 
 }

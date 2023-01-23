@@ -1,9 +1,9 @@
 
-public class Car implements Drive{
-
+public class Car extends Vehicle{
+	
 	@Override
-	public void drive() {
-		System.out.println("The car has been driving");
-	}
+	public void sounds(){
 
+		System.out.println("The Car sounds *tur tur ..");
+}
 }
