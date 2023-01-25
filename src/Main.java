@@ -1,31 +1,15 @@
-import java.util.Scanner;
+import java.io.File;
 
-public class Main {
-
-	//Dynamic-Polymorphism
+public class Main{
 	public static void main(String[] args) {
+		//file 
+		File file = new File("message.txt");
 		
-		Scanner scanner = new Scanner(System.in);
-		
-		Vehicle vehicle;
-		
-		System.out.println("What vehicle do you want?");
-		System.out.println("(1=Car) or (2=Bike): ");
-		
-		int choice = scanner.nextInt();
-		if (choice == 1) {
-			vehicle = new Car();
-			vehicle.sounds();
-		}
-		else if (choice == 2) {
-			vehicle = new Bike();
-			vehicle.sounds();
+		if (file.exists()) {
+			System.out.println("That file exists! ");
 		}
 		else {
-			System.out.println("The choice was invalid!");
+			System.out.println("That file does not exist! ");
 		}
-		
-
 	}
-
 }
