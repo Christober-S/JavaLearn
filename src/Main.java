@@ -2,20 +2,20 @@ import java.awt.Color;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class Main{
 	public static void main(String [] args) {
 		
-		//JFrame is GUI window to add components to 
-		JFrame frame = new JFrame();  // creates a frame
-		frame.setSize(430, 430); // sets the  x-dimensions, and y-dimensions of frame
-		frame.setTitle("Example for JFrame"); // sets title of frame
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exit out our application
-		frame.setResizable(false); // prevent frame from being resized
-		frame.setVisible(true); // make frame visible
+		JLabel label = new JLabel(); // create label
+		label.setText("Hello chris."); //set text of label
 		
-		ImageIcon logo = new ImageIcon("c logo.jpg"); // create image logo
-		frame.setIconImage(logo.getImage()); // change or set icon of frame
-		frame.getContentPane().setBackground(new Color(0x123456)); // change color of background
+		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(450,450);
+		frame.setVisible(true);
+		
+		frame.add(label);
+	
 	}
 }
